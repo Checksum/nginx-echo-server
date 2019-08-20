@@ -12,6 +12,7 @@ A simple openresty based image which acts as a catch-all server and echos back t
 
 * `/status/{httpStatus}` - Responds with the given HTTP status
 * `/jwt` - Expects a JWT token as the body and returns the decoded token (Requires the `JWT_SECRET` environment variable to be set)
+* `/websocket` - WebSocket which echos the received payload. Responds to `ping` with `pong`.
 * `/any/path/here` - Matches any other path and simply echoes back the request headers and body
 
 ### Usage
